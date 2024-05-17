@@ -18,9 +18,9 @@ export const WeatherData = ({ data }: WeatherDataProps) => {
         );
         
         if (data.cod == 404) return (
-            <div className="h-[50vh] m-5 w-full md:max-w-x4l lg:max-w-6xl">
-            <div className="h-[50vh] bg-error404 bg-cover bg-no-repeat text-white  w-full " />
-            <p className="text-center text-xl font-bold">City Not Found.</p>
+            <div className="h-96 m-5 w-full md:max-w-x4l lg:max-w-6xl">
+            <div className="h-96 bg-error404 bg-cover bg-no-repeat text-white  w-full " />
+            <p className="text-center text-xl font-bold">Place Not Found.</p>
         </div>
     );
     
@@ -67,7 +67,7 @@ export const WeatherData = ({ data }: WeatherDataProps) => {
 
     return (
         <div className={cn(
-            "h-[50vh] bg-cover bg-no-repeat text-white m-5 w-full md:max-w-x4l lg:max-w-6xl",
+            "h-96 bg-cover bg-no-repeat text-white m-5 w-full md:max-w-x4l lg:max-w-6xl",
             parseWeatherCodeBackground(data.weather[0].id)
         )}>
             <div className="h-full w-full backdrop-blur-sm">

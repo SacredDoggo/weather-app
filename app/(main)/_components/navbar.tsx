@@ -29,12 +29,12 @@ export const Navbar = ({ onSubmit }: NavbarProps) => {
     return (
         <div className="flex justify-center">
             <ModeToggle />
-            <div className="ml-2 flex w-full lg:max-w-md items-center">
+            <div className="ml-2 flex w-full lg:max-w-sm items-center">
                 <SearchIcon className="absolute m-2 text-muted-foreground" />
                 <Input
                     placeholder="Search your city"
                     onKeyDown={handleKeyDown}
-                    className="w-full focus-visible:ring-transparent font-medium text-lg pl-10 mr-1"
+                    className="w-full focus-visible:ring-transparent font-medium text-sm pl-10 mr-1"
                     value={city}
                     onChange={e => setCity(e.target.value)}
                 />
